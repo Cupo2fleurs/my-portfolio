@@ -14,6 +14,15 @@ export default function App() {
             link.click();
             document.body.removeChild(link);
   }
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
   <MantineProvider>{
     <div className="style">
@@ -21,15 +30,9 @@ export default function App() {
       <nav className="navbar">
         <Avatar variant="filled" radius="xs" size="lg" src="image/logo/MyLogo2.png" id="MyLogo" />
         <Container className="containTravel" bg="var(--mantine-color-yellow-light)">
-          <a href="#Profile">
-          <div className='Travel'><Button variant="subtle" color="white" size="md" radius="md">Profile</Button></div>
-          </a>
-          <a href="#Work">
-          <div className="Travel"><Button variant="subtle" color="white" size="md" radius="md">Work</Button></div>
-          </a>
-          <a href="#Contact">
-          <div className='Travel'><Button variant="subtle" color="white" size="md" radius="md">Contact</Button></div>
-          </a>
+          <div className='Travel'><Button variant="subtle" color="white" size="md" radius="md" onClick={() => scrollToSection('Profile')}>Profile</Button></div>
+          <div className="Travel"><Button variant="subtle" color="white" size="md" radius="md" onClick={() => scrollToSection('Work')}>Work</Button></div>
+          <div className='Travel'><Button variant="subtle" color="white" size="md" radius="md" onClick={() => scrollToSection('Contact')}>Contact</Button></div>
         </Container>
       </nav>
       
@@ -151,10 +154,10 @@ export default function App() {
               <Image radius="xl" h={400} w="auto" fit="contain" src="./image/projet/CyTruck.PNG"/>
             </Carousel.Slide>
             <Carousel.Slide>
-            <Image radius="xl" h={400} w="auto" fit="contain" src="./image/projet/CyTruckstat.PNG" />
+            <Image radius="xl" h={400} w="auto" fit="contain" src="./image/projet/Cytruckstat.png" />
             </Carousel.Slide>
             <Carousel.Slide>
-            <Image radius="xl" h={400} w="auto" fit="contain" src="./image/projet/CyTruckstat2.PNG" />
+            <Image radius="xl" h={400} w="auto" fit="contain" src="./image/projet/CyTruckstat2.png" />
             </Carousel.Slide>
           </Carousel>
           <a href="https://github.com/Lorichag/pouet-pouet" target="_blank">
@@ -183,7 +186,7 @@ export default function App() {
             <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar radius="0%" src="./image/logo/java.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>Java</Text><Text size="sm">Class language</Text></div></Button>
             <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar src="./image/logo/C.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>C</Text><Text size="sm">Low level language</Text></div></Button>
             <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar radius="0%" src="./image/logo/python.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>Python</Text><Text size="sm">Interpreted Programming</Text></div></Button>
-            <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar src="./image/logo/SQL.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>SQL</Text><Text size="sm">Storing and Processing</Text><Text Text size="sm"> in Data base</Text></div></Button>
+            <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar src="./image/logo/sql.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>SQL</Text><Text size="sm">Storing and Processing</Text><Text Text size="sm"> in Data base</Text></div></Button>
             <Button className="Tools" variant="outline" color="gray" size="xl" radius="md"><Avatar src="./image/logo/PHP.png" alt="L"></Avatar><div className="TextTools"><Text c="white" fw={700}>PHP</Text><Text size="sm">Server side Scripting</Text></div></Button>
           </div>
         </Container>
@@ -199,7 +202,7 @@ export default function App() {
           </div>
         <div id="contain_social">
                 <a href='https://github.com/Cupo2fleurs' target="_blank"></a>
-                <Button className="social_media" variant="outline" color="yellow" size="lg" radius="md"><Avatar src="./image/logo/Github2.PNG" alt="L" ></Avatar></Button>
+                <Button className="social_media" variant="outline" color="yellow" size="lg" radius="md"><Avatar src="./image/logo/Github2.png" alt="L" ></Avatar></Button>
                 <a href="https://www.linkedin.com/in/axelguesdon/" target="_blank">
                 <Button className="social_media" variant="outline" color="yellow" size="lg" radius="md"><Avatar radius="0%" src="./image/logo/linkedin2.png" alt="L"></Avatar></Button>
                 </a>
