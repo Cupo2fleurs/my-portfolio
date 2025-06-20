@@ -40,12 +40,12 @@ export default function App() {
 
      
       <div className="space"></div>
-        <h1 className="i1">Axel Guesdon tries to find a collaboration</h1>
+        <h1 className="i1">Axel Guesdon Presentation</h1>
         <Container id="contain" size="xl" bg="var(--mantine-color-yellow-light)">
           <div id="text">
           <section id="Profile">
           <Container id="contain2" size="xxs">
-          <Text td="underline"><h2 id="name">Student in Bac+2</h2> </Text> 
+          <Text td="underline"><h2 id="name">Computer Engineers Bac+1</h2> </Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-blue-5)"/>
           <Text>Currently in internship at Netapp</Text>
           </Container>
@@ -53,7 +53,7 @@ export default function App() {
           <Timeline className='school' color="yellow" active={1} bulletSize={27}>
             <Timeline.Item>
               <Text c="white" size="lm" >Baccalaureate</Text>
-              <Text c="dimmed" size="sm" >With good mention</Text>
+              <Text c="dimmed" size="sm" >With honors</Text>
             </Timeline.Item>
             <Timeline.Item lineVariant='dashed'>
             <Text c="white" size="lm" >Integrated prep in Cytech</Text>
@@ -83,7 +83,7 @@ export default function App() {
 
 
           <div id="img">
-          <Image radius="xl" h={400} w="auto" fit="contain" src="./image/image5.jpg"/>
+          <Image radius="xl" h={500} w="auto" fit="contain" src="./image/image6.jpg"/>
           </div>
           
       </Container>
