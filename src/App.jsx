@@ -110,7 +110,7 @@ export default function App() {
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-green-5)"/>
           <Text>Objective: Create an interface like Logism to create a logic circuit Tool use: Java </Text>
           </Container>
-          <Image radius="xl" h={400} w="auto" fit="contain" className="ImageCarousel" src="./image/projet/LogiCym.PNG"/>
+          <Image radius="xl" h={450} w="auto" fit="contain" className="ImageCarousel" src="./image/projet/LogiCym.PNG"/>
           <a href="https://github.com/ShadowoftheRedFox/LogiCYm" target="_blank">
           <Button color="yellow" variant="outline" size="md" radius="xl" id="Github2">Github<Avatar src="./image/logo/Github2.png" alt="L" id="Github"></Avatar></Button>
           </a>
