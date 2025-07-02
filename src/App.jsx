@@ -104,7 +104,7 @@ export default function App() {
 
 
         <Carousel slideSize="60%"  height={600} slideGap="xl" emblaOptions={{ loop: true, dragFree: false,align: 'center'}} controlSize={40}>
-        <Carousel.Slide>
+        <Carousel.Slide style={{ width: '450px', height: '250px' }}>
         <Container id="contain2" size="xxs">
           <Text className='littleSpace' size="xl">LogiCym</Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-green-5)"/>
@@ -142,6 +142,8 @@ export default function App() {
           <Button color="yellow" variant="outline" size="md" radius="xl" id="Github3">Github<Avatar src="./image/logo/Github2.png" alt="L" id="Github"></Avatar></Button>
           </a>  
       </Carousel.Slide>
+
+
         <Carousel.Slide style={{ width: '450px', height: '250px' }} >
           <Container id="contain2" size="xxs">
           <Text size="xl">CyTruck</Text> 
@@ -165,7 +167,7 @@ export default function App() {
           </a>  
           </Carousel.Slide>
 
-          <Carousel.Slide>
+          <Carousel.Slide style={{ width: '450px', height: '250px' }}>
           <Container id="contain2" size="xxs">
           <Text size="xl">Cy-Memory</Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-green-5)"/>
