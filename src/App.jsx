@@ -103,7 +103,7 @@ export default function App() {
 
 
 
-        <Carousel slideSize="60%" height={600} slideGap="xl" emblaOptions={{ loop: true, dragFree: false,align: 'center'}} controlSize={26}>
+        <Carousel slideSize="60%" height={600} slideGap="xl" emblaOptions={{ loop: true, dragFree: false,align: 'center'}} controlSize={40}>
         <Carousel.Slide >
         <Container id="contain2" size="xxs">
           <Text className='littleSpace' size="xl">LogiCym</Text> 
@@ -118,7 +118,7 @@ export default function App() {
 
 
 
-      <Carousel.Slide>
+      <Carousel.Slide style={{ width: '450px', height: '250px' }}>
         <Container id="contain2" size="xxs">
           <Text size="xl">CyHome</Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-green-5)"/>
@@ -144,7 +144,7 @@ export default function App() {
       </Carousel.Slide>
 
 
-        <Carousel.Slide>
+        <Carousel.Slide style={{ width: '450px', height: '250px' }}>
           <Container id="contain2" size="xxs">
           <Text size="xl">CyTruck</Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-green-5)"/>
