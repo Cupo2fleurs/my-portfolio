@@ -103,7 +103,7 @@ export default function App() {
 
 
 
-        <Carousel slideSize="10%" width={500} height={600} slideGap="xl" emblaOptions={{ loop: true, dragFree: false,align: 'center'}} controlSize={40}>
+        <Carousel slideSize="10%"  height={600} slideGap="xl" emblaOptions={{ loop: true, dragFree: false,align: 'center'}} controlSize={40}>
         <Carousel.Slide>
         <Container id="contain2" size="xxs">
           <Text className='littleSpace' size="xl">LogiCym</Text> 
