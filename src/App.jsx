@@ -26,7 +26,6 @@ export default function App() {
   return (
   <MantineProvider>{
     <div className="style">
-      <title>Axel Guesdon Portfolio</title>
       <nav className="navbar">
         <Avatar variant="filled" radius="xs" size="lg" src="image/logo/MyLogo2.png" id="MyLogo" />
         <Container className="containTravel" bg="var(--mantine-color-yellow-light)">
@@ -45,7 +44,7 @@ export default function App() {
           <div id="text">
           <section id="Profile">
           <Container id="contain2" size="xxs">
-          <Text td="underline"><h2 id="name">Computer Engineers Bac+1</h2> </Text> 
+          <Text td="underline"><h2 id="name">Computer Engineers Bac+3</h2> </Text> 
           <ColorSwatch className="circle" size="20px" color="var(--mantine-color-blue-5)"/>
           <Text>Currently in internship at Netapp</Text>
           </Container>
@@ -53,7 +52,7 @@ export default function App() {
           <Timeline className='school' color="yellow" active={1} bulletSize={27}>
             <Timeline.Item>
               <Text c="white" size="lm" >Baccalaureate</Text>
-              <Text c="dimmed" size="sm" >With honors</Text>
+              <Text c="dimmed" size="sm" >With honors and computer science and mathematics options</Text>
             </Timeline.Item>
             <Timeline.Item lineVariant='dashed'>
             <Text c="white" size="lm" >Integrated prep in Cytech</Text>
@@ -202,8 +201,9 @@ export default function App() {
             <Text> Or you can contact me on Linkedin and on my phone number 07 60 41 85 57.</Text>
           </div>
         <div id="contain_social">
-                <a href='https://github.com/Cupo2fleurs' target="_blank"></a>
+                <a href='https://github.com/Cupo2fleurs' target="_blank">
                 <Button className="social_media" variant="outline" color="yellow" size="lg" radius="md"><Avatar src="./image/logo/Github2.png" alt="L" ></Avatar></Button>
+                </a>
                 <a href="https://www.linkedin.com/in/axelguesdon/" target="_blank">
                 <Button className="social_media" variant="outline" color="yellow" size="lg" radius="md"><Avatar radius="0%" src="./image/logo/linkedin2.png" alt="L"></Avatar></Button>
                 </a>
