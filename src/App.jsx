@@ -117,7 +117,6 @@ export default function App() {
       </Carousel.Slide>
 
 
-
       <Carousel.Slide style={{ width: '450px', height: '250px' }}>
         <Container id="contain2" size="xxs">
           <Text size="xl">CyHome</Text> 
